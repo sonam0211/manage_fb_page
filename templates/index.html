@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <link rel="stylesheet"  href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+   
+   <link rel="stylesheet"  href="{{ url_for('static', filename='css/main.css') }}">
+   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet">
+<div class="container">
+  <div class="sidebar">
+    <header class="company">GROWTH PLUG</header>
+    <nav>
+      <ul>
+        <li><a href="#"><i class="material-icons">home</i>Dashboard</a></li>
+        <li><a href="#"><i class="material-icons">web</i>Website</a></li>
+        <li><a href="#"><i class="material-icons">mouse</i>Visitors</a></li>
+        <li><a href="#"><i class="material-icons">star</i>Reviews</a></li>
+        <li data-ui='selected'><a href="#"><i class="material-icons">toc</i>Listings</a></li>
+        <li><a href="#"><i class="material-icons">date_range</i>Appointments</a></li>
+        <li><a href="#"><i class="material-icons">settings</i>Settings</a></li>
+
+      </ul>
+    </nav>
+  </div>
+  <div class="main">
+    <div class="box">
+      <div class="area"> Yo Board
+      </div>
+      <form  id="my_form" action = "http://localhost:5000/profile" method = "POST"></form>
+      <table class="board">
+        <caption class="title">Listings</caption>
+        <thead>
+          <tr>
+
+
+            <th scope="col"></th>
+            <th scope="col">Source</th>
+            <th scope="col">Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Rating</th>
+            <th scope="col">Listed</th>
+            <th scope="col">Status</th>
+            <th scope="col">Action</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Account"><i class="fa fa-google-plus" aria-hidden="true"></i></td>
+            <td data-label="Due Date">Google</td>
+            <td data-label="Amount">ABC Dental</td>
+            <td data-label="Period">2101 California St</td>
+            <td data-label="Period">111.111.1111</td>
+            <td data-label="Period">3/5</td>
+            <td data-label="Period">Yes</td>
+            <td scope="row" data-label="Account"><i class="fa fa-check" aria-hidden="true"></i></td>
+          </tr>
+          <tr>
+            <td scope="row" data-label="Account"><i class="fa fa-yelp" aria-hidden="true"></i></td>
+            <td data-label="Due Date">Yelp</td>
+            <td data-label="Amount">ABC Dental</td>
+            <td data-label="Period">2101 California St</td>
+            <td data-label="Period">111.111.1111</td>
+            <td data-label="Period">2/5</td>
+            <td data-label="Period">No</td>
+            <td scope="row" data-label="Account"><i class="fa fa-times" aria-hidden="true"></i></td>
+          </tr>
+          <tr>
+            <td scope="row" data-label="Account"><i class="fa fa-yahoo" aria-hidden="true"></i></td>
+            <td data-label="Due Date">Yahoo!</td>
+            <td data-label="Amount">ABC Dental</td>
+            <td data-label="Period">2101 California St</td>
+            <td data-label="Period">111.111.1111</td>
+            <td data-label="Period">3/5</td>
+            <td data-label="Period">No</td>
+            <td scope="row" data-label="Account"><i class="fa fa-times" aria-hidden="true"></i></td>
+          </tr>
+          <tr>
+            <td scope="row" data-label="Acount"><i class="fa fa-foursquare" aria-hidden="true"></i></td>
+            <td data-label="Due Date">Foursquare</td>
+            <td data-label="Amount">ABC Dental</td>
+            <td data-label="Period">2101 California St</td>
+            <td data-label="Period">111.111.1111</td>
+            <td data-label="Period">2/5</td>
+            <td data-label="Period">No</td>
+            <td scope="row" data-label="Account"><i class="fa fa-check" aria-hidden="true"></i></td>
+          </tr>
+          <tr>
+            <td scope="row" data-label="Acount"><i class="fa fa-facebook" aria-hidden="true"></i></td>
+            <td data-label="Due Date">Facebook</td>
+            <td data-label="Amount">ABC Dental</td>
+            <td data-label="Period">2101 California St</td>
+            <td data-label="Period"><input type="text" name="phone" placeholder="Phone No" form="my_form" /></td>
+            <td data-label="Period">3/5</td>
+            <td data-label="Period">No</td>
+            <td scope="row" data-label="Account"><i class="fa fa-check" aria-hidden="true"></i></td>
+            <td ><button type="submit" form="my_form">update</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Lato', 'Arial', 'sans-serif';
+  font-weight: 400;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  background-color: #ededee;
+}
+
+/* .container {
+  margin: 2%;
+} */
+
+.sidebar {
+  width: 20%;
+  background-color: #00bdad;
+  float: left;
+  max-width: 20%;
+  margin: 0;
+  height: 700px;
+  border: 2px solid #d9dcde;
+}
+/*.button{
+	text-align: center;
+	background-color: pink;
+}*/
+
+.company {
+  background-color: #00ad9b;
+  padding: 10px 0px;
+  text-align: center;
+  color: #fff;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-top: 15px;
+}
+
+nav ul li {
+  padding: 15px 0; 
+}
+
+nav ul li i {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+   
+nav ul a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li[data-ui="selected"] { 
+  background-color: #00878f;
+}
+
+.material-icons {
+  font-size: 20px;
+}
+
+.main {
+  border: 2px solid #d9dcde;
+  color: #333b45;
+/*   height: 700px; */
+  
+}
+
+.area {
+  border-bottom: 2px solid #d9dcde;
+  background-color: #fff;
+  height: 45px;
+}
+
+.board {
+  border: 2px solid #d9dcde;
+  background-color: #fafafa;
+}
+
+.title {
+  border-bottom: 2px solid #d9dcde;
+  height: 45px;
+  text-align: center;
+  padding-top: 3px;
+  background-color: #ecf6f4;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+}
+table {
+  border: 2px solid #d9dcde;
+  border-collapse: collapse;
+/*   margin: 0; */
+/*   padding: 0; */
+  width: 70%;
+  table-layout: fixed;
+}
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+table tr {
+  border: 2px solid #d9dcde;
+}
+table th,
+table td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  text-align: center;
+}
+table td {
+  font-size: 14px;
+}
+table th {
+  font-size: 16px;
+  letter-spacing: .1em;
+}
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+  table caption {
+    font-size: 1.3em;
+  }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 11px;
+    text-align: right;
+  }
+  table td:before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+/*----facebook button----*/
+
+.loginBtn {
+  box-sizing: border-box;
+  position: relative;
+  /* width: 13em;  - apply for fixed size */
+  margin: 0.2em;
+  padding: 0 15px 0 46px;
+  border: none;
+  text-align: center;
+  line-height: 34px;
+  white-space: nowrap;
+  border-radius: 1em;
+  font-size: 16px;
+  color: #FFF;
+}
