@@ -2,3 +2,4 @@ flask
 requests_oauthlib
 facebook-sdk
 Flask_Bootstrap
+uwsgi
