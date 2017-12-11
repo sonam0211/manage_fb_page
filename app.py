@@ -1,7 +1,5 @@
 import facebook
-from pprint import pformat
 from requests_oauthlib import OAuth2Session
-from requests_oauthlib.compliance_fixes import facebook_compliance_fix
 from flask import Flask, request, redirect, session, url_for, render_template
 from flask_bootstrap import Bootstrap
 from flask.json import jsonify
