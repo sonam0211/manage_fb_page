@@ -98,7 +98,7 @@ def profile():
 if __name__ == "__main__":
     # This allows us to use a plain HTTP callback
     os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
-    app.secret_key = os.urandom(24)
+    app.secret_key = "my seceret key"
     app.run(debug=True)
 
 
