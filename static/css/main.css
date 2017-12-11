@@ -166,19 +166,6 @@ table th {
   }
 }
 
-/*----facebook button----*/
-
-.loginBtn {
-  box-sizing: border-box;
-  position: relative;
-  /* width: 13em;  - apply for fixed size */
-  margin: 0.2em;
-  padding: 0 15px 0 46px;
-  border: none;
-  text-align: center;
-  line-height: 34px;
-  white-space: nowrap;
-  border-radius: 1em;
-  font-size: 16px;
-  color: #FFF;
+input[type="text"] {
+    width: -webkit-fill-available;
 }
