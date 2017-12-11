@@ -14,7 +14,7 @@ client_id = '298257940686893'
 client_secret = '017ffa5d110c22e1fd7ac06ba3729e7d'
 authorization_base_url = 'https://www.facebook.com/dialog/oauth'
 token_url = 'https://graph.facebook.com/oauth/access_token'
-redirect_uri = 'http://localhost:5000/facebook/callback'
+redirect_uri ='https://manage-fb-page.herokuapp.com/facebook/callback'
 
 refresh_url = token_url
 
