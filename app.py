@@ -10,7 +10,7 @@ app.secret_key = "my seceret key"
 bootstrap = Bootstrap(app)
 
 
-client_id = '62047603542124621'
+client_id = '2047603542124621'
 client_secret = 'af0a5d8393da07a28b825ad5a052b722'
 authorization_base_url = 'https://www.facebook.com/dialog/oauth'
 token_url = 'https://graph.facebook.com/oauth/access_token'
