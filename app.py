@@ -29,7 +29,7 @@ def demo():
     Redirect the user/resource owner to the OAuth provider (i.e. Facebook)
     using an URL with a few key OAuth parameters.
     """
-    facebook = OAuth2Session(client_id, redirect_uri=redirect_uri, scope=['manage_pages', 'publish_pages', 'email'])
+    facebook = OAuth2Session(client_id, redirect_uri=redirect_uri, scope=['manage_pages', 'email'])
     # facebook = facebook_compliance_fix(facebook)
     authorization_url, state = facebook.authorization_url(authorization_base_url)
 
