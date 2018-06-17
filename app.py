@@ -10,8 +10,8 @@ app.secret_key = "my seceret key"
 bootstrap = Bootstrap(app)
 
 
-client_id = '298257940686893'
-client_secret = '017ffa5d110c22e1fd7ac06ba3729e7d'
+client_id = '675085149505409'
+client_secret = '49ff0f110f6fc743cd5c53778a4983f5'
 authorization_base_url = 'https://www.facebook.com/dialog/oauth'
 token_url = 'https://graph.facebook.com/oauth/access_token'
 redirect_uri ='https://manage-fb-page.herokuapp.com/facebook/callback'
@@ -35,7 +35,7 @@ def demo():
 
     # State is used to prevent CSRF, keep this for later.
     session['oauth_state'] = state
-    print(session, authorization_url)
+    # print(session, authorization_url)
     return redirect(authorization_url)
 
 
