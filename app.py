@@ -10,8 +10,8 @@ app.secret_key = "my seceret key"
 bootstrap = Bootstrap(app)
 
 
-client_id = '2047603542124621'
-client_secret = 'af0a5d8393da07a28b825ad5a052b722'
+client_id = '920519341451379'
+client_secret = '9601bc9750f98376ca7d2bf8b87f5e0f'
 authorization_base_url = 'https://www.facebook.com/dialog/oauth'
 token_url = 'https://graph.facebook.com/oauth/access_token'
 redirect_uri ='https://manage-fb-page.herokuapp.com/facebook/callback'
